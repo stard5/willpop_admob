@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "59317842487",
+    "project_id": "ssk-samples",
+    "storage_bucket": "ssk-samples.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59317842487:android:6eee57c3a97a91191f45b2",
+        "android_client_info": {
+          "package_name": "willpop_admob.willpop_admob_example"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59317842487-s9754nqgq35r65t1sh14elbqf4n90jnc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxJRHbydvZKQA3lGFg6VR9V5Pr4mK8vgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59317842487-s9754nqgq35r65t1sh14elbqf4n90jnc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
