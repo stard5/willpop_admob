@@ -40,6 +40,7 @@ class _MyHomeState extends State<MyHome> {
         child: Center(
           child: NativeAdmob(
             adUnitID: _adUnitID,
+            numberAds: 2,
             controller: _controller,
           ),
         ),
@@ -59,12 +60,16 @@ class _MyHomeState extends State<MyHome> {
               children: <Widget>[
                 Text('나갈꺼야?'),
                 Text('광고 한번 누르고 가'),
-                NativeAdmob(
-                  // Your ad unit id
-                  adUnitID: _adUnitID,
-                  numberAds: 3,
-                  controller: _controller,
-                  type: NativeAdmobType.full,
+                SizedBox(
+                  width: MediaQuery.of(context).size.width,
+                  height: 200,
+                  child: NativeAdmob(
+                    // Your ad unit id
+                    adUnitID: _adUnitID,
+                    numberAds: 2,
+                    controller: _controller,
+                    type: NativeAdmobType.full,
+                  ),
                 )
               ],
             ),
