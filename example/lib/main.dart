@@ -21,28 +21,19 @@ class MyHome extends StatefulWidget {
 }
 
 class _MyHomeState extends State<MyHome> {
-
-  final _controller = NativeAdmobController();
   static const _adUnitID = "ca-app-pub-3940256099942544/8135179316";
+  final _controller = NativeAdmobController()..setAdUnitID(_adUnitID);
 
   @override
   Widget build(BuildContext context) {
-    return _buildScaffold();
-  }
-
-  Scaffold _buildScaffold() {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Plugin example app'),
+        title: const Text('willpop_admob example'),
       ),
       body: WillPopScope(
         onWillPop: () async => _buildShowDialog(context),
         child: Center(
-          child: NativeAdmob(
-            adUnitID: _adUnitID,
-            numberAds: 2,
-            controller: _controller,
-          ),
+          child: Text('Press Back key to show willpop_admob and exit app.'),
         ),
       ),
     );
@@ -51,15 +42,13 @@ class _MyHomeState extends State<MyHome> {
   Future<bool> _buildShowDialog(BuildContext context) {
     return showDialog<bool>(
       context: context,
-      barrierDismissible: false, // user must tap button!
+      barrierDismissible: false,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text('Rewind and remember'),
+          title: Text('Exit app?'),
           content: SingleChildScrollView(
             child: ListBody(
               children: <Widget>[
-                Text('나갈꺼야?'),
-                Text('광고 한번 누르고 가'),
                 SizedBox(
                   width: MediaQuery.of(context).size.width,
                   height: 200,
@@ -76,13 +65,13 @@ class _MyHomeState extends State<MyHome> {
           ),
           actions: <Widget>[
             FlatButton(
-              child: Text('종료'),
+              child: Text('Exit'),
               onPressed: () {
                 Navigator.of(context).pop(true);
               },
             ),
             FlatButton(
-              child: Text('종료 안함'),
+              child: Text('Cancel'),
               onPressed: () {
                 Navigator.of(context).pop(false);
               },
