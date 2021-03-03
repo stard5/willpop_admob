@@ -1,22 +1,28 @@
 import 'package:flutter_native_admob/flutter_native_admob.dart';
 import 'package:flutter_native_admob/native_admob_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+export 'package:willpop_admob/will_pop_admob.dart';
 
 class WillPopAdmob extends StatelessWidget {
   final String adUnitID;
-
+  final String playStoreURL;
   final Widget title;
   final Widget child;
   final Widget exitTitle;
   final Widget cancelTitle;
+  final Widget reviewTitle;
   final NativeAdmobController _controller;
 
   WillPopAdmob({
     @required this.adUnitID,
+    @required this.playStoreURL,
     this.title,
     this.child,
     @required this.exitTitle,
     this.cancelTitle,
+    this.reviewTitle,
   })  : _controller = NativeAdmobController()..setAdUnitID(adUnitID),
         super();
 
@@ -62,8 +68,25 @@ class WillPopAdmob extends StatelessWidget {
               Navigator.of(context).pop(false);
             },
           ),
+          FlatButton(
+            child: reviewTitle,
+            onPressed: () {
+              _launchURL();
+            },
+          ),
         ],
+
       ),
     );
   }
+  _launchURL() async {
+    var url;
+    url = playStoreURL;
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
 }

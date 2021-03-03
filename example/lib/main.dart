@@ -20,7 +20,9 @@ class App extends StatelessWidget {
                     Text('Press Back key to show willpop_admob and exit app.'),
               ),
               exitTitle: Text('Exit'),
-              cancelTitle: Text('Cancel')),
+              cancelTitle: Text('Cancel'),
+              reviewTitle: Text('Review'),
+              playStoreURL: 'https://play.google.com/store/apps/details?id=com.yttw.sakjetalk'),
         ),
       );
 }
