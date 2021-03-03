@@ -1,13 +1,13 @@
 #
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
-# Run `pod lib lint willpop_admob.podspec' to validate before publishing.
+# Run `pod lib lint will_pop_admob.podspec' to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'willpop_admob'
+  s.name             = 'will_pop_admob'
   s.version          = '0.0.1'
-  s.summary          = 'WillPopAdmob'
+  s.summary          = 'Will Pop Admob Plugin'
   s.description      = <<-DESC
-WillPopAdmob
+Will Pop Admob Plugin
                        DESC
   s.homepage         = 'http://example.com'
   s.license          = { :file => '../LICENSE' }

@@ -1,4 +1,4 @@
-group 'willpop_admob.willpop_admob'
+group 'willpopadmob.will_pop_admob'
 version '1.0-SNAPSHOT'
 
 buildscript {

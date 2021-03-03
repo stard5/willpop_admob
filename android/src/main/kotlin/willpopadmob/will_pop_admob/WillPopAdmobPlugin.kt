@@ -1,4 +1,4 @@
-package willpop_admob.willpop_admob
+package willpopadmob.will_pop_admob
 
 import androidx.annotation.NonNull
 
@@ -9,8 +9,8 @@ import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry.Registrar
 
-/** WillpopAdmobPlugin */
-class WillpopAdmobPlugin: FlutterPlugin, MethodCallHandler {
+/** WillPopAdmobPlugin */
+class WillPopAdmobPlugin: FlutterPlugin, MethodCallHandler {
   /// The MethodChannel that will the communication between Flutter and native Android
   ///
   /// This local reference serves to register the plugin with the Flutter Engine and unregister it
@@ -18,7 +18,7 @@ class WillpopAdmobPlugin: FlutterPlugin, MethodCallHandler {
   private lateinit var channel : MethodChannel
 
   override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "willpop_admob")
+    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "will_pop_admob")
     channel.setMethodCallHandler(this)
   }
 

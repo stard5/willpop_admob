@@ -1,8 +1,9 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:will_pop_admob/will_pop_admob.dart';
 
 void main() {
-  const MethodChannel channel = MethodChannel('willpop_admob');
+  const MethodChannel channel = MethodChannel('will_pop_admob');
 
   TestWidgetsFlutterBinding.ensureInitialized();
 
@@ -17,6 +18,6 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-    expect(await WillpopAdmob.platformVersion, '42');
+    expect(await WillPopAdmob.platformVersion, '42');
   });
 }

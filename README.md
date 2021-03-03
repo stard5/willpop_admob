@@ -1,6 +1,6 @@
-# willpop_admob
+# will_pop_admob
 
-WillPopAdmob
+Will Pop Admob Plugin
 
 ## Getting Started
 

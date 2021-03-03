@@ -1,6 +1,6 @@
-# willpop_admob_example
+# will_pop_admob_example
 
-Demonstrates how to use the willpop_admob plugin.
+Demonstrates how to use the will_pop_admob plugin.
 
 ## Getting Started
 

@@ -1,4 +1,4 @@
 #import <Flutter/Flutter.h>
 
-@interface WillpopAdmobPlugin : NSObject<FlutterPlugin>
+@interface WillPopAdmobPlugin : NSObject<FlutterPlugin>
 @end

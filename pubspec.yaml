@@ -1,7 +1,8 @@
-name: willpop_admob
-description: WillPopAdmob
+name: will_pop_admob
+description: Will Pop Admob Plugin
 version: 0.0.1
-repository: https://github.com/stard5/willpop_admob
+author:
+homepage:
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -29,10 +30,10 @@ flutter:
   plugin:
     platforms:
       android:
-        package: willpop_admob.willpop_admob
-        pluginClass: WillpopAdmobPlugin
+        package: willpopadmob.will_pop_admob
+        pluginClass: WillPopAdmobPlugin
       ios:
-        pluginClass: WillpopAdmobPlugin
+        pluginClass: WillPopAdmobPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

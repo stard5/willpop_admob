@@ -22,9 +22,9 @@ class WillPopAdmob extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => WillPopScope(
-        child: this.child,
-        onWillPop: () => _buildShowDialog(context),
-      );
+    child: this.child,
+    onWillPop: () => _buildShowDialog(context),
+  );
 
   Future<bool> _buildShowDialog(BuildContext context) {
     return showDialog<bool>(
