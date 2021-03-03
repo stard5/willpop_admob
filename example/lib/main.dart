@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:willpop_admob_example/will_pop_admob.dart';
+import 'package:willpop_admob/will_pop_admob.dart';
 
 void main() {
   runApp(App());
